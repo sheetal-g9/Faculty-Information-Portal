@@ -1,0 +1,15 @@
+Trends of papers by various faculties
+time from to
+break by research area, faculties
+
+
+Collaboration trends
+faculty id 
+time from to
+research area
+
+
+
+Total fund received
+Department
+time from to

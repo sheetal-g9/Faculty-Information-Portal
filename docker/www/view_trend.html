@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trends</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h2>Publication Info</h2>
+	
+	<form method="post" action="view_trend.php">
+	
+		<div class="form-row form-group">
+			<div class="col">
+				<label for="from">From:</label>
+				<input id="from" class="form-control" type="text" name="from" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="From (Optional)">
+			</div>
+			
+			<div class="col">
+				<label for="to">To:</label>
+				<input id="to" class="form-control" type="text" name="to" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="To (Optional)">
+			</div>
+		</div>
+
+		<label for="filter">Filter By:</label>
+	
+		<div id="filter" class="form-row">
+	
+			<div class="col">
+				<label>Research Fields</label>
+				<div id="add_button_r" class="btn btn-success"> Add</div>
+				<div id="remove_button_r" class="btn btn-danger"> Remove</div>
+				<div id="research_field"></div>
+			</div>
+
+			<div class="col">
+				<label>Faculties</label>
+				<div id="add_button_f" class="btn btn-success"> Add</div>
+				<div id="remove_button_f" class="btn btn-danger"> Remove</div>
+				<div id="faculty"></div>
+			</div>
+		</div>
+		
+		<input type="submit" class="btn btn-primary" name="submit" value="Submit">
+	
+	</form>
+	<br>
+	<p>* Note: Leaving the form blank will view the trend of all Faculties in all research_fields.</p>
+	
+	<script type="text/javascript" src="index1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>View Research Item - Faculty Research Portal</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+	<h2 class="head">View details and collabarators for publications/projects.</h2>
+
+	<form action="view_research.php" method="post">
+		<div id="radios" class="form-group">
+			<label>Type:  	
+			<label>
+				<input  class="radio" type="radio" name="research_type" value="publication" checked>
+			Publication</label>
+
+
+			<label>
+				<input  class="radio" type="radio" name="research_type" value="project">
+			Project
+			</label>
+			</label>
+		</div>
+
+		<div id="entry1" class="form-group">
+			<label for="pub_id">Publication Title: </label>
+			<input id="pub_id" class="form-control" type="text" name="publication_id" placeholder="Publication Title" autofocus>
+		</div>
+
+		<div id="entry2" class="form-group">
+			<label for="pro_id">Project Title:</label>
+			<input id="pro_id" class="form-control" type="text" name="project_id" placeholder="Project Title">
+		</div>
+
+		<input type="submit" class="btn btn-primary" name="submit" value="Submit">
+	</form>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

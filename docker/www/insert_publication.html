@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Insert Publication</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="head">Insert Publication</h2>
+		<form action="insert_publication.php" method="post" name="publication_form">
+			<div class="form-group">
+				<label for="title1">Title </label> 
+				<input class="form-control" type="text" name="title" placeholder="Title" autofocus required>
+			</div>
+			
+			<div class="form-group">
+				<label for="research_fields">Research Fields</label>
+				<input id="research_fields" class="form-control" type="text" name="research_fields" placeholder="Research Fields" required>
+			</div>
+
+
+			<div class="form-group">
+				<label for="desc">Description</label>
+				<textarea id="desc" class="span6 form-control" rows="3" name="description" placeholder="Description"></textarea>
+			</div> 
+
+			<div class="form-group">
+				<label for="citations">Citations</label>
+					<input id="citations" class="form-control" type="text" name="citations" placeholder="Citations">
+			</div> 
+
+			<div id="radios" class="form-group">
+				<label> Type:
+					<label>
+						<input class="radio" type="radio" name="publication_type" value="journal" checked>
+						Journal 
+					</label>
+					<label> 
+						<input class="radio"  type="radio" name="publication_type" value="conference">
+						Conference 
+					</label>
+				</label>
+			</div>
+			
+
+			<div id="entry1">
+				<div class="form-group">
+					<label for="journal_name">Journal Name</label>
+						<input id="journal_name" class="form-control" type="text" name="journal_name" placeholder="Journal Name" >
+				</div> 
+
+		
+				<div class="form-group form-row">
+					<div class="col">
+						<label for="volume">Volume </label>
+						<input id="volume" class="form-control" type="text" name="volume" placeholder="Volume" >
+					</div>
+
+					<div class="col">
+						<label for="no">No </label>
+						<input id="no" class="form-control" type="text" name="no" placeholder="Number">
+					</div>
+				</div> 
+			</div>
+
+			<div id="entry2" style="display:none;">
+				<div class="form-group">
+					<label for="organisation">Organisation</label>
+					<input id="organisation" class="form-control" type="text" name="organisation" placeholder="Organisation" >
+				</div> 
+
+		
+				<div class="form-group">
+					<label for="location">Location</label>
+					<input id="location" class="form-control" type="text" name="location" placeholder="Location" >
+				</div> 
+			</div>
+
+			<label for="pages">Pages</label>
+			<div class="form-group form-row" id="pages">
+				<div class="col">
+						<input id="pages" class="form-control" type="text" name="page_from" placeholder="From" required>
+					</div> 
+					
+					<div class="col">
+						<input id="" class="form-control" type="text" name="page_to" placeholder="To">
+					</div>
+			</div> 
+
+
+			<div class="form-group">
+				<label>Publication Date
+					<input id="" class="form-control" type="date" name="publication_date" required>
+				</label>
+			</div> 
+
+			<div id="">
+				<label>Faculties Involved</label>
+				<div id="add_button_f" class="btn btn-success"> Add</div>
+				<div id="remove_button_f" class="btn btn-danger"> Remove</div>
+				<div id="faculty"></div>
+			</div>
+
+			<input id="" type="submit" name="submit" class="btn btn-primary" value="Submit">
+		</form>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

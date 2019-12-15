@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collaboration Trend</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Collaboration Trend of a Faculty</h2>
+	<form method="post" action="collaboration_trend.php">
+		<div class="form-group">
+			<label for="fac_id">Faculty ID</label>
+			<input id="fac_id" class="form-control" type="email" name="faculty_id" placeholder="Email" required>
+		</div>
+
+		<div class="form-group form-row">
+			<div class="col">
+				<label for="from">From:</label>
+				<input id="from" class="form-control" type="text" name="from" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="From (Optional)">
+			</div>
+			
+			<div class="col">
+				<label for="to">To:</label>
+				<input id="to" class="form-control" type="text" name="to" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="To (Optional)">
+			</div>
+		</div>
+		
+		<div id="filter" class="form-row">
+			<div class="col">
+				<label>Research Fields</label>
+				<div id="add_button_r" class="btn btn-success"> Add</div>
+				<div id="remove_button_r" class="btn btn-danger"> Remove</div>
+				<div id="research_field"></div>
+			</div>
+		</div>
+		<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+	</form>
+	<script type="text/javascript" src="index1.js"></script>
+
+</body>
+</html>
